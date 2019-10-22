@@ -1,0 +1,19 @@
+overwrite: true
+schema:
+  - http://localhost:8888/graphql:
+      headers:
+        authorization: Basic dXNlcjp2YWxoYWxsYQ==
+documents: '**/*.graphql'
+config:
+  namingConvention:
+    transformUnderscore: true
+generates:
+  src/generated/graphql.tsx:
+    plugins:
+      - 'typescript'
+      - 'typescript-operations'
+      - 'typescript-react-apollo'
+    config:
+      withHooks: true
+      withComponent: false
+      withHOC: false
