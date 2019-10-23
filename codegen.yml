@@ -1,8 +1,6 @@
 overwrite: true
 schema:
-  - http://localhost:8888/graphql:
-      headers:
-        authorization: Basic dXNlcjp2YWxoYWxsYQ==
+  - http://localhost:8888/graphql
 documents: '**/*.graphql'
 config:
   namingConvention:

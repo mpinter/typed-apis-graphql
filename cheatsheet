@@ -1,0 +1,2 @@
+graphdoc -e http://localhost:8888/graphql -o /tmp/schema
+
